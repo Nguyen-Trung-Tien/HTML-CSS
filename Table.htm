@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            td,th{border: 1px solid;}
+        </style>
+    </head>
+    <body>
+        <!-- Table: tạo bảng -->
+        <table>
+            <!-- thead: là tiêu đề (header) của bảng-->
+            <thead>
+                <!-- th: tương đương 1 ô ngang-->
+                <th>Môn học</th>
+                <th>Tên</th>
+                <th>Điểm</th>
+            </thead>
+            <!-- tbody: thân của bảng-->
+            <tbody>
+                <!-- tr: tương đương 1 ô dọc , tương đương với thead -->
+                <tr>
+                    <!-- td: tương đương với th-->
+                    <td>HTML</td>
+                    <td>A</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>B</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>C</td>
+                    <td>9</td>
+                </tr>
+            </tbody>
+            <!--tfoot: footer (dòng đáy của bảng)-->
+            <tfoot>
+                <tr>
+                    <td>Điểm tổng:</td>
+                    <td colspan>1000</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <!-- Tạo list: danh sách-->
+
+        <!--ul: tạo list dấu chấm đầu và bắt buộc bên trong phải có thẻ <li>-->
+        <!--ol: tạo list số dạng số ở đầu tương tự thẻ <ul>-->
+        <!-- thuộc tính: type: thay đổi tên list thành số hoặc chữ
+                        start: bắt đầu dòng đầu tiên từ bao nhiêu 
+                        reversed: đảo ngược-->
+        <ul>
+            <li>Trái cây</li>
+            <li>Hoa quả</li>
+            <li>Bánh trái</li>
+        </ul>
+        <ol type="1" start="2" reversed>
+            <li>Sting</li>
+            <li>Rong Do</li>
+            <li>Bo huc</li>
+        </ol>
+    </body>
+</html>

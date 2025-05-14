@@ -1,0 +1,16 @@
+h1 {
+  color: blue;
+}
+/*
+css bằng id: sử dụng dấu #
+*/
+#second {
+  color: red;
+}
+/*
+css bằng class: sử dụng dấu .
+*/
+.third {
+  color: aquamarine;
+  font-size: 80px;
+}

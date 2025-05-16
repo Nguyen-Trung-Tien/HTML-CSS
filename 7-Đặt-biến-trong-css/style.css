@@ -1,0 +1,11 @@
+/*dùng root tạo các biến để tái sử dụng hoặc dung html {} vẫn được*/
+:root {
+  --my-color: green;
+  --my-fontSize: 100px;
+}
+
+/*dùng biến: + var (tên biến) để gọi root đã tạo */
+h1 {
+  color: var(--my-color);
+  font-size: var(--my-fontSize);
+}

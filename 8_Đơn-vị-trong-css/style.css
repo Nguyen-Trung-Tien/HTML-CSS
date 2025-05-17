@@ -1,0 +1,35 @@
+/*
+- Đơn vị tuyệt đối (Position Units)
+    + 1 inch = 2.54cm = 96px
+    + 1px = 1/96inch
+    + 1pt (points) = 1/72inch
+- Đơn vị tương đối (Absolute Units)
+    + %: phụ thuộc vào class cha mà nó phụ thuộc vào (phụ thuộc vào kích thước class gần nhất)
+    + em: phụ thuộc vào class cha gần nhất có thuộc tính font-size
+    + rem: phụ thuộc vào font-size của thẻ html
+    + vh:(View Hight) là % hiển thị chiều dọc của trình duyệt (100vh = 100% hiểm thị chiều dọc trên trình duyệt)
+    + vw:(View Width) là % hiển thị chiều ngang của trình duyệt (100vw = 100% hiển thị chiều ngàn trình duyệt)
+    + vmin: là % hiển thị tối thiểu của trình duyệt, (1vmin = 1% hiển thị trên trình duyệt, 
+      ví dụ: 1024x900px thì 1vmin = 9.6px)
+    + vmax: là % hiển thị tối đa của trình duyệt, (1vmax = 1% hiển thị trên trình duyệt, 
+      ví dụ: 1024x900px thì 1vmax = 10.24px)
+*/
+html {
+  font-size: 20px;
+}
+body {
+  margin: 0;
+}
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+.box-2 {
+  width: 50%;
+}
+.box {
+  width: 4vmax;
+  height: 100vh;
+  background-color: blueviolet;
+  font-size: 20px;
+}

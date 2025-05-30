@@ -1,0 +1,6 @@
+.box-1 {
+  height: 500px;
+  /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png); */
+  /* background-image: linear-gradient(red 10%, blue 50%); */
+  background-image: radial-gradient(red 40%, black 50%);
+}

@@ -2,9 +2,11 @@ body {
   margin: 0 !important;
   padding: 0 !important;
 }
+
 .red {
   border: 1px solid red;
 }
+
 .green {
   border: 1px solid green;
 }
@@ -14,48 +16,41 @@ body {
   background: url("./pexels-asadphoto-3426867.jpg") center no-repeat;
   padding: 20px;
 }
-
-.about-sign-in {
+.banner .about-sign-in {
   height: 80px;
   width: 100%;
   text-align: right;
 }
-
-.about,
-.login {
+.banner .about-sign-in .about,
+.banner .about-sign-in .login {
   margin-top: 20px;
   padding: 7px 15px;
   text-decoration: none;
   display: inline-block;
   text-transform: uppercase;
 }
-
-.login {
+.banner .about-sign-in .login {
   margin-right: 60px;
   margin-left: 25px;
   border: 1px solid green;
   border-radius: 20px;
 }
-
-.logo {
+.banner .logo {
   background: url("./html-5.png") center no-repeat;
   height: 100px;
   margin-top: 40px;
 }
-
-.text {
+.banner .text {
   text-align: center;
   margin-top: 30px;
 }
-
-.text span {
+.banner .text span {
   color: green;
   font-size: 30px;
 }
-.btn-start-now {
+.banner .btn-start-now {
   text-align: center;
 }
-
 .banner .btn-start-now button {
   text-transform: uppercase;
   padding: 10px 15px;
@@ -64,23 +59,22 @@ body {
   margin-top: 20px;
   cursor: pointer;
 }
-
-.left,
-.right,
-.center {
+.banner .content-center .left,
+.banner .content-center .right,
+.banner .content-center .center {
   width: 33%;
   display: inline-block;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
-span {
+.banner .content-center span {
+  color: red;
   display: block;
-  font-size: 20px;
+  font-size: 25px;
+  padding-top: 5px;
 }
-
-img {
+.banner .content-center img {
   width: 30px;
   height: 30px;
 }

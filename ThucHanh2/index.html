@@ -7,91 +7,66 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
             rel="stylesheet" />
-        <link
-            rel="stylesheet"
+        <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div class="cv-container">
+        <div class="cv-container grid grid-cols-1 md:grid-cols-[1fr_2.5fr]">
             <!-- Sidebar -->
-            <aside class="sidebar">
+            <aside class="sidebar flex flex-col items-center">
                 <div class="profile-pic">
-                    <img
-                        src="./pexels-picturemechaniq-1749303.jpg"
-                        alt="Ảnh đại diện"
-                        class="avatar" />
+                    <img src="./pexels-picturemechaniq-1749303.jpg"
+                        alt="Ảnh đại diện" class="avatar" />
                 </div>
-                <h1 class="name">Nguyễn Trung Tiến</h1>
-                <p class="role">Intern Web Developer</p>
-
+                <h1 class="name text-2xl font-bold mt-4">Nguyễn Trung Tiến</h1>
+                <p class="role text-lg opacity-90">Intern Web Developer</p>
                 <div class="divider"></div>
-
                 <section class="contact">
                     <h2>Thông tin cá nhân</h2>
-                    <ul>
-                        <li><i class="fa-solid fa-phone"></i> 0348 897 817</li>
-                        <li>
-                            <i class="fa-solid fa-envelope"></i>
-                            <a href="mailto:trungtiennguyen910@gmail.com">
-                                trungtiennguyen910@gmail.com
-                            </a>
-                        </li>
-                        <li>
-                            <i class="fa-brands fa-github"></i>
-                            <a href="https://github.com/Nguyen-Trung-Tien"
-                                target="_blank">
-                                github.com/Nguyen-Trung-Tien
-                            </a>
-                        </li>
+                    <ul class="space-y-2">
+                        <li><i class="fa-solid fa-phone"></i> 0xxxxx.xx</li>
+                        <li><i class="fa-solid fa-envelope"></i> <a
+                                href="mailto:trungtiennguyen910@gmail.com">xxx@gmail.com</a></li>
+                        <li><i class="fa-brands fa-github"></i> <a
+                                href="https://github.com/Nguyen-Trung-Tien"
+                                target="_blank">github.com/Nguyen-Trung-Tien</a></li>
                         <li><i class="fa-solid fa-location-dot"></i> Quận 12,
                             TP. Hồ Chí Minh</li>
                     </ul>
                 </section>
-
-                <section class="skills">
+                <section class="skills mt-6">
                     <h2>Kỹ năng</h2>
-                    <ul>
-                        <li>
-                            <strong>Front-end:</strong> HTML, CSS (SCSS),
-                            Bootstrap, JavaScript,
-                            ReactJS
-                        </li>
-                        <li>
-                            <strong>Back-end:</strong> NodeJS (Express), Java
-                            (Spring Boot), C#, C++,
-                            JavaScript
-                        </li>
+                    <ul class="space-y-2">
+                        <li><strong>Front-end:</strong> HTML, CSS (SCSS),
+                            Bootstrap, JavaScript, ReactJS</li>
+                        <li><strong>Back-end:</strong> NodeJS (Express), Java
+                            (Spring Boot), C#, C++, JavaScript</li>
                         <li><strong>Database:</strong> MySQL, MongoDB</li>
                         <li><strong>Khác:</strong> Git/GitHub, Docker, Tiếng Anh
                             (đọc hiểu tài liệu)</li>
                     </ul>
                 </section>
-
-                <section class="education">
+                <section class="education mt-6">
                     <h2>Học vấn</h2>
-                    <p>
-                        <strong>Đại học Giao thông Vận tải TP.HCM</strong><br />
-                        Chuyên ngành: Công nghệ thông tin<br />
-                        Sinh viên năm 4 (2022 – nay)
-                    </p>
+                    <p><strong>Đại học Giao thông Vận tải
+                            TP.HCM</strong><br />Chuyên ngành: Công nghệ thông
+                        tin<br />Sinh viên năm 4 (2022 – nay)</p>
                 </section>
             </aside>
-
             <!-- Main Content -->
             <main class="main-content">
                 <section class="career-goal">
-                    <h2>Mục tiêu nghề nghiệp</h2>
-                    <p>
-                        Tìm kiếm cơ hội thực tập <strong>Web Developer</strong>
-                        để vận dụng ReactJS,
-                        NodeJS, Database và trau dồi kỹ năng qua dự án thực tế.
-                    </p>
+                    <h2 class="text-2xl font-semibold text-blue-600">Mục tiêu
+                        nghề nghiệp</h2>
+                    <p class="mt-2">Tìm kiếm cơ hội thực tập <strong>Web
+                            Developer</strong> để vận dụng ReactJS, NodeJS,
+                        Database và trau dồi kỹ năng qua dự án thực tế.</p>
                 </section>
-
-                <section class="projects">
-                    <h2>Dự án đã thực hiện</h2>
-
+                <section class="projects mt-8">
+                    <h2 class="text-2xl font-semibold text-blue-600">Dự án đã
+                        thực hiện</h2>
                     <div class="exp-item">
                         <div class="exp-header">
                             <span class="exp-title">Website Thương Mại Điện Tử
@@ -99,25 +74,20 @@
                             <span class="exp-date">(08/02/2025 –
                                 13/07/2025)</span>
                         </div>
-                        <p>
-                            <strong>Link:</strong>
-                            <a
+                        <p class="mt-2">
+                            <strong>Link:</strong> <a
                                 href="https://github.com/Nguyen-Trung-Tien/SMART-STORE">github.com/Nguyen-Trung-Tien/SMART-STORE</a><br />
                             <strong>Công nghệ:</strong> ReactJS (JSX), HTML,
-                            CSS, JavaScript,
-                            NodeJS, ExpressJS, MongoDB.<br />
+                            CSS, JavaScript, NodeJS, ExpressJS, MongoDB.<br />
                             <strong>Vai trò:</strong> Phát triển Frontend &
                             Backend.<br />
                             <strong>Mô tả:</strong> Website bán hàng cho phép
-                            người dùng đăng ký /
-                            đăng nhập, tìm kiếm & mua sản phẩm, thanh toán qua
-                            VNPay / PayPal. Hỗ
-                            trợ theo dõi đơn hàng, giỏ hàng, trang quản trị sản
-                            phẩm & dashboard
-                            doanh thu.
+                            người dùng đăng ký / đăng nhập, tìm kiếm & mua sản
+                            phẩm, thanh toán qua VNPay / PayPal. Hỗ trợ theo dõi
+                            đơn hàng, giỏ hàng, trang quản trị sản phẩm &
+                            dashboard doanh thu.
                         </p>
                     </div>
-
                     <div class="exp-item">
                         <div class="exp-header">
                             <span class="exp-title">Hệ Thống Quản Lý Kho Hàng
@@ -125,24 +95,21 @@
                             <span class="exp-date">(22/07/2025 –
                                 27/09/2025)</span>
                         </div>
-                        <p>
-                            <strong>Link:</strong>
-                            <a
+                        <p class="mt-2">
+                            <strong>Link:</strong> <a
                                 href="https://github.com/Nguyen-Trung-Tien/HE-THONG-QUAN-LY-KHO">github.com/Nguyen-Trung-Tien/HE-THONG-QUAN-LY-KHO</a><br />
                             <strong>Công nghệ:</strong> ReactJS (Vite,
-                            TailwindCSS), NodeJS,
-                            ExpressJS, MySQL (Sequelize).<br />
+                            TailwindCSS), NodeJS, ExpressJS, MySQL
+                            (Sequelize).<br />
                             <strong>Vai trò:</strong> Phát triển Frontend
-                            (ReactJS responsive) và
-                            Backend (API quản lý, phân quyền).<br />
+                            (ReactJS responsive) và Backend (API quản lý, phân
+                            quyền).<br />
                             <strong>Mô tả:</strong> Hệ thống quản lý kho hàng
-                            gồm quản lý sản phẩm,
-                            đơn hàng, nhân viên, khách hàng, nhà cung cấp, hỗ
-                            trợ tìm kiếm, lọc,
-                            phân trang, xuất Excel & thống kê doanh thu.
+                            gồm quản lý sản phẩm, đơn hàng, nhân viên, khách
+                            hàng, nhà cung cấp, hỗ trợ tìm kiếm, lọc, phân
+                            trang, xuất Excel & thống kê doanh thu.
                         </p>
                     </div>
-
                     <div class="exp-item">
                         <div class="exp-header">
                             <span class="exp-title">KoiAuction – Website Đấu Giá
@@ -150,23 +117,19 @@
                             <span class="exp-date">(30/09/2024 –
                                 18/11/2024)</span>
                         </div>
-                        <p>
-                            <strong>Link:</strong>
-                            <a
+                        <p class="mt-2">
+                            <strong>Link:</strong> <a
                                 href="https://github.com/Nguyen-Trung-Tien/Koi-Fish-Auction-Website">github.com/Nguyen-Trung-Tien/Koi-Fish-Auction-Website</a><br />
                             <strong>Công nghệ:</strong> Backend: Java (Spring
-                            Boot), Database: MySQL;
-                            Frontend: ReactJS.<br />
+                            Boot), Database: MySQL; Frontend: ReactJS.<br />
                             <strong>Vai trò:</strong> Phát triển Back-end &
                             thiết kế Database.<br />
                             <strong>Mô tả:</strong> Hệ thống đấu giá cá Koi cho
-                            phép đăng ký, đặt
-                            giá, theo dõi phiên đấu giá, thanh toán và quản trị
-                            CRUD sản phẩm, phiên
-                            đấu giá, người dùng, doanh thu.
+                            phép đăng ký, đặt giá, theo dõi phiên đấu giá, thanh
+                            toán và quản trị CRUD sản phẩm, phiên đấu giá, người
+                            dùng, doanh thu.
                         </p>
                     </div>
-
                     <div class="exp-item">
                         <div class="exp-header">
                             <span class="exp-title">Ứng Dụng Xem Thời Tiết (Dự
@@ -174,27 +137,35 @@
                             <span class="exp-date">(18/09/2024 –
                                 25/11/2024)</span>
                         </div>
-                        <p>
-                            <strong>Link:</strong>
-                            <a
+                        <p class="mt-2">
+                            <strong>Link:</strong> <a
                                 href="https://github.com/Nguyen-Trung-Tien/Ung-dung-xem-thoi-tiet">github.com/Nguyen-Trung-Tien/Ung-dung-xem-thoi-tiet</a><br />
                             <strong>Công nghệ:</strong> C#, .NET Framework
-                            (Windows Forms),
-                            OpenWeatherMap API.<br />
+                            (Windows Forms), OpenWeatherMap API.<br />
                             <strong>Vai trò:</strong> Phát triển toàn bộ ứng
-                            dụng (UI + API
-                            tích hợp).<br />
+                            dụng (UI + API tích hợp).<br />
                             <strong>Mô tả:</strong> Ứng dụng desktop tra cứu
-                            thời tiết tại nhiều địa
-                            điểm, hiển thị nhiệt độ, độ ẩm, áp suất, gió, mây và
-                            thay đổi hình nền
-                            theo điều kiện thời tiết. Có cảnh báo thiên tai &
-                            gợi ý hoạt động phù
-                            hợp.
+                            thời tiết tại nhiều địa điểm, hiển thị nhiệt độ, độ
+                            ẩm, áp suất, gió, mây và thay đổi hình nền theo điều
+                            kiện thời tiết. Có cảnh báo thiên tai & gợi ý hoạt
+                            động phù hợp.
                         </p>
                     </div>
                 </section>
             </main>
         </div>
+        <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.exp-item, .sidebar ul li');
+            elements.forEach((el, index) => {
+                el.style.opacity = '0';
+                setTimeout(() => {
+                    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }, index * 100);
+            });
+        });
+    </script>
     </body>
 </html>
